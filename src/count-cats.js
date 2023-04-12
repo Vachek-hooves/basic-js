@@ -1,15 +1,26 @@
 
 
+/**
+ * Given matrix where you have to find cats by ears "^^"
+ *
+ * @param {Array<Array>} matrix 
+ * @return {Number} count of cats found
+ *
+ 
+ *
+ */
 
-const backyard = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ];
 
+const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ];
 
-function countCats (){
+ 
+
+module.exports = function countCats(arr) {
     let cat = '^^';
     let catsArr =[];
-    let number;
+    let Number;
 
-    let single= backyard.flat();
+    let single= arr.flat();
     console.log(single)
 
     for (let i=0; i<single.length; i++){
@@ -21,7 +32,8 @@ function countCats (){
           
         }
     }
-    number=catsArr.length
-    alert(number)
+    Number=catsArr.length
+    alert(Number)
 };
-countCats(backyard);
+
+countCats(matrix);
