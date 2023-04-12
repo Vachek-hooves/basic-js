@@ -1,19 +1,5 @@
 
-
-/**
- * Given matrix where you have to find cats by ears "^^"
- *
- * @param {Array<Array>} matrix 
- * @return {Number} count of cats found
- *
- 
- *
- */
-
-
-const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ];
-
- 
+const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ]; 
 
 module.exports = function countCats(arr) {
     let cat = '^^';
