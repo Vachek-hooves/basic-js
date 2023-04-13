@@ -1,6 +1,4 @@
 
-const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ]; 
-
 module.exports = function countCats(arr) {
     let cat = '^^';
     let catsArr =[];
@@ -11,11 +9,8 @@ module.exports = function countCats(arr) {
 
     for (let i=0; i<single.length; i++){
         let catPart=single[i];
-        // console.log(catPart)
         if(catPart===cat){
-          catsArr.push(catPart);
-
-          
+          catsArr.push(catPart); 
         }
     }
     Number=catsArr.length
@@ -23,3 +18,5 @@ module.exports = function countCats(arr) {
 };
 
 countCats(matrix);
+
+const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ]; 
