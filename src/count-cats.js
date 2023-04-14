@@ -1,45 +1,42 @@
-// /**
-//  * Given matrix where you have to find cats by ears "^^"
-//  *
-//  * @param {Array<Array>} matrix 
-//  * @return {Number} count of cats found
-//  *
-//  * @example
-//  * countCats([
-//  *  [0, 1, '^^'],
-//  *  [0, '^^', 2],
-//  *  ['^^', 1, 2]
-//  * ]) => 3`
-//  *
-//  */
-//  function countCats(/* matrix */) {
-//     throw new NotImplementedError('Not implemented');
-//     // remove line with error and write your code here
-//   }
-  
-//   module.exports = {
-//     countCats
-//   };
-const matrix = [ [0, 1, '^^'], [0, '^^', 2], ['^^', 1, 2] ];
+const { NotImplementedError } = require('../extensions/index.js');
 
-function countCats (arr){
-  let cat = '^^';
-  let catsArr =[];
-  let Number;
+/**
+ * Given matrix where you have to find cats by ears "^^"
+ *
+ * @param {Array<Array>} matrix 
+ * @return {Number} count of cats found
+ *
+ * @example
+ * countCats([
+ *  [0, 1, '^^'],
+ *  [0, '^^', 2],
+ *  ['^^', 1, 2]
+ * ]) => 3`
+ *
+ */
+function countCats(arr) {
 
-  let single= arr.flat();
-  console.log(single)
+    let cat = '^^';
+      let catsArr =[];
+      let Number;
 
-  for (let i=0; i<single.length; i++){
-      let catPart=single[i];
-      // console.log(catPart)
-      if(catPart===cat){
-        catsArr.push(catPart);
+      let single= arr.flat();
+      console.log(single)
 
-        
+      for (let i=0; i<single.length; i++){
+          let catPart=single[i];
+          // console.log(catPart)
+          if(catPart===cat){
+            catsArr.push(catPart);
+          }
       }
-  }
-  Number=catsArr.length
-  alert(Number)
+      Number= catsArr.length
+      return Number;
+}
+
+module.exports = {
+  countCats
 };
-countCats(matrix);
+
+
+
